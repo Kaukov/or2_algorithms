@@ -1,0 +1,25 @@
+{
+  "name": "or2_algorithms",
+  "version": "1.0.0",
+  "description": "OR2 University Algorithm Tasks",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaukov/or2_algorithms.git"
+  },
+  "keywords": [
+    "math",
+    "algorithms",
+    "operational",
+    "research"
+  ],
+  "author": "Peter Kaukov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kaukov/or2_algorithms/issues"
+  },
+  "homepage": "https://github.com/Kaukov/or2_algorithms#readme"
+}
