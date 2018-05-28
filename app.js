@@ -5,6 +5,10 @@ const figlet      = require('figlet')
 const files = require('./lib/files')
 const inquirer  = require('./lib/inquirer')
 
+const CLI         = require('clui')
+const Spinner     = CLI.Spinner
+const status = new Spinner()
+
 const task1 = null
 const task2 = null
 const task3 = null
@@ -31,11 +35,17 @@ const tasks = [
 // showPassedParams()
 
 const run = async () => {
-  const credentials = await inquirer.askGithubCredentials()
-  const { username } = credentials
-  console.log(credentials)
-  console.log(credentials.username)
-  console.log(username)
+  // const credentials = await inquirer.askGithubCredentials()
+  // const { username } = credentials
+  // console.log(credentials)
+  // console.log(credentials.username)
+  // console.log(username)
+
+  const params = await task4.askForParameters()
+
+  // status.statusText = task4.getLoadingMessage()
+
+  task4.solve(params)
 }
 
 clear()
